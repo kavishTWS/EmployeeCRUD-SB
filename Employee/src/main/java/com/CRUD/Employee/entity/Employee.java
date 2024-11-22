@@ -16,6 +16,14 @@ public class Employee {
     private Integer age;
     private Double salary;
 
+    public Employee(Long id, String name, int age, double salary) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+    
+
     // Getters and Setters
     public Long getId() {
         return id;
@@ -50,7 +58,7 @@ public class Employee {
     }
 
     public Optional<Employee> map(Object object) {
-        // TODO Auto-generated method stub
+    
         throw new UnsupportedOperationException("Unimplemented method 'map'");
     }
 }
